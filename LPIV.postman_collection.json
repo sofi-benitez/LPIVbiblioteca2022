@@ -1,0 +1,451 @@
+{
+	"info": {
+		"_postman_id": "c1f9de29-ee92-405d-923f-2accfa36c2f1",
+		"name": "LPIV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ActualizarCiudad",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\" : 0,\r\n    \"descripcion\" : \"Nueva ciudad \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/ciudad/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"ciudad",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas las Ciudades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/ciudad/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"ciudad",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar ciudad por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/ciudad/find/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"ciudad",
+						"find",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar ciudad",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/ciudad/delete/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"ciudad",
+						"delete",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\" : 0,\r\n    \"foto\" : null,\r\n    \"ciudad\" : {\r\n        \"codigo\" : 2\r\n    },\r\n    \"direccion\" : \"km 5 La blanca\",\r\n    \"nombre\" : \"Gilberto Cardozo\",\r\n    \"obs\" : \"Es un cliente frecuente y paga bien\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/cliente/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"cliente",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos los clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/cliente/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"cliente",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar cliente por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/cliente/find/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"cliente",
+						"find",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Cliente por codigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/cliente/delete/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"cliente",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Libro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\" : 0,\r\n    \"descripcion\" : \"Fisica III\",\r\n    \"cantidad\" : 35,\r\n    \"obs\" : \"Edicion 2017\",\r\n    \"tipo_libro\" : {\r\n        \"codigo\" : 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/libro/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"libro",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todos los Libros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/libro/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"libro",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar libro por codigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/libro/find/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"libro",
+						"find",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar  libro por codigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/libro/delete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"libro",
+						"delete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Prestamos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero\" : 0,\r\n    \"fecha\" : \"2021-08-20T00:00:00\",\r\n    \"cliente\" : {\r\n        \"codigo\" : 1\r\n    },\r\n    \"situacion\" : 0,\r\n    \"usuario\" : {\r\n        \"codigo\" : 1\r\n    },\r\n    \"total\" : 100000,\r\n    \"observacion\" : \"Insertado desde postman\",\r\n    \"prestamosLibros\" : [ {\r\n        \"fechaDevolucion\" : \"2021-08-25T00:00:00\",\r\n        \"dias\" : 5,\r\n        \"estado\" : 0,\r\n        \"libro\" : {\r\n            \"codigo\" : 1\r\n        },\r\n        \"valor\" : 13500\r\n    }, {\r\n        \"fechaDevolucion\" : \"2021-08-27T00:00:00\",\r\n        \"dias\" : 7,\r\n        \"estado\" : 0,\r\n        \"libro\" : {\r\n            \"codigo\" : 2\r\n        },\r\n        \"valor\" : 25700\r\n    }] \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Encabezado Prestamo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Detalle de Prestamo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo-libro/find-by-prestamo/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo-libro",
+						"find-by-prestamo",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Encabezado de Prestamo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo/find/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo",
+						"find",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Encabezado de Prestamo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo/delete/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo",
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Detalle de Prestamo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/PROYECTO-REST/rest/prestamo-libro/delete/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"PROYECTO-REST",
+						"rest",
+						"prestamo-libro",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
